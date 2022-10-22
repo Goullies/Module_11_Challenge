@@ -92,7 +92,7 @@ To do so, I completed the following steps:
 #### MercadoLibre Closing price hvPlot.
 ![Screenshot3_2](./Screenshots/Screenshot3_2.png)
 
-#### Concatenated Dataframes results head and tail.
+#### Concatenated Dataframe results head and tail.
 
 ![Screenshot3_3](./Screenshots/Screenshot3_3.png)
 - Market events emerged during the year of 2020 that many companies found difficult. But, after the initial shock to global financial markets, new customers and revenue increased for e-commerce platforms. Slice the data to just the first half of 2020 (2020-01 to 2020-06 in the DataFrame), and then use hvPlot to plot the data. Do both time series indicate a common trend that’s consistent with this narrative?
@@ -120,7 +120,7 @@ Answer: Yes, it could be considered inter-related. I note that there may be a re
 #### Head and Tail outputs of the Hourly Stock Return dataframe
 ![Screenshot3_7](./Screenshots/Screenshot3_7.png)
 
-####Correlation Table of Stock Volatility, Lagged Search Trends and Hourly Stock Return
+#### Correlation Table of Stock Volatility, Lagged Search Trends and Hourly Stock Return
 ![Screenshot3_8](./Screenshots/Screenshot3_8.png)
 
 - Review the time series correlation, and then answer the following question:
@@ -144,8 +144,9 @@ I produced a time series model that analyses and forecasts patterns in the hourl
 
 Question: How's the near-term forecast for the popularity of MercadoLibre?
 
-Answer: The forecast trends shows an initial decline to the centre of the forecast period before recovering to levels near the start of the prediction.
-####Setting the index in the forecast_mercado_trends dataframe to the ds datetime column.
+Answer: The forecast trends shows an initial decline to the centre of the forecast period before recovering to levels near the start of the prediction. 
+
+#### Setting the index in the forecast_mercado_trends dataframe to the ds datetime column.
 ![Screenshot4_3](./Screenshots/Screenshot4_3.png)
 
 #### A hvPlot visualisation of the yhat, yhat_lower and yhat_upper   
@@ -190,6 +191,10 @@ To do so, I completed the following steps:
 
 #### Plot_componets results to analyse seasonal patterns in revenue
 ![Screenshot5_3](./Screenshots/Screenshot5_3.png)
+
+Question: For example, what are the peak revenue days? (Mondays? Fridays? Something else?)
+
+Answer: From the weekly chart it is clear that the peak revenue day is Wednesday.
 
 #### Predictions of the Mercado sales
 ![Screenshot5_4](./Screenshots/Screenshot5_4.png)
