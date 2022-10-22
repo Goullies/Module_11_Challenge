@@ -31,11 +31,11 @@ Read the search data into a DataFrame, and then slice the data to just the month
 Calculate the total search traffic for the month, and then compare the value to the monthly median across all months. Did the Google Search traffic increase during the month that MercadoLibre released its financial results?
 
 
-- Results of slicing the data into the month of May 2020.
+#### Results of slicing the data into the month of May 2020.
 
 ![Screenshot1_2](../Screenshots/Screenshot1_2.png)
 
--  HvPlot results for the month of May 2020.
+#### HvPlot results for the month of May 2020.
 
 ![Screenshot1_3](../Screenshots/Screenshot1_3.png)
 
@@ -59,7 +59,7 @@ Using hvPlot, visualise this traffic as a heatmap, referencing index.hour for th
 
 Group the search data by the week of the year to find if the search traffic tended to increase during the winter holiday period (Weeks 40 through 52).
 
-#### Group the hourly search data and plot the average traffic by the day of the week, Monday = 0 to Sunday = 6.
+#### Below, Group the hourly search data and plot the average traffic by the day of the week, Monday = 0 to Sunday = 6.
 
 ![Screenshot2_1](../Screenshots/Screenshot2_1.png)
 
@@ -92,10 +92,12 @@ To do so, I completed the following steps:
 #### MercadoLibre Closing price hvPlot.
 ![Screenshot3_2](../Screenshots/Screenshot3_2.png)
 
+#### Concatenated Dataframes results head and tail.
+
 ![Screenshot3_3](../Screenshots/Screenshot3_3.png)
 - Market events emerged during the year of 2020 that many companies found difficult. But, after the initial shock to global financial markets, new customers and revenue increased for e-commerce platforms. Slice the data to just the first half of 2020 (2020-01 to 2020-06 in the DataFrame), and then use hvPlot to plot the data. Do both time series indicate a common trend that’s consistent with this narrative?
 
-#### Concated MercadoLibre Stock Trend results
+#### Sliced result of the concatenated dataframe to first half of 2020
 ![Screenshot3_4](../Screenshots/Screenshot3_4.png)
 
 #### First half search trends hvPlots
