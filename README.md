@@ -1,7 +1,7 @@
 # Module_11_Challenge
 ## Forecasting Net Prophet
 
-![MercadoLibre](../Screenshots/MercadoLibre.png)
+![MercadoLibre](./Screenshots/MercadoLibre.png)
 
 ## Background
 
@@ -33,11 +33,11 @@ Calculate the total search traffic for the month, and then compare the value to 
 
 #### Results of slicing the data into the month of May 2020.
 
-![Screenshot1_2](../Screenshots/Screenshot1_2.png)
+![Screenshot1_2](./Screenshots/Screenshot1_2.png)
 
 #### HvPlot results for the month of May 2020.
 
-![Screenshot1_3](../Screenshots/Screenshot1_3.png)
+![Screenshot1_3](./Screenshots/Screenshot1_3.png)
 
 Using the formula:  traffic_may_2020 = df_may_2020["Search Trends"].sum()
 - traffic_may_2020 totalled 38181
@@ -61,18 +61,18 @@ Group the search data by the week of the year to find if the search traffic tend
 
 #### Below, Group the hourly search data and plot the average traffic by the day of the week, Monday = 0 to Sunday = 6.
 
-![Screenshot2_1](../Screenshots/Screenshot2_1.png)
+![Screenshot2_1](./Screenshots/Screenshot2_1.png)
 
 #### A hvPlot to visualize this traffic as a heatmap, referencing the index.hour as the x-axis and the index.dayofweek as the y-axis.
 
-![Screenshot2_2](../Screenshots/Screenshot2_2.png)
+![Screenshot2_2](./Screenshots/Screenshot2_2.png)
 
 Question: Does any day-of-week effect that you observe concentrate in just a few hours of that day?
 
 Answer: From the above heat map, it appears to be consentrated in the late evening to early morning hours of the day from 22:00 to 01:00 hours, possibly suggesting after work searches.
 
 #### Hourly Search data grouped for the Ave search Traffic by Week or the Year.
-![Screenshot2_3](../Screenshots/Screenshot2_3.png)
+![Screenshot2_3](./Screenshots/Screenshot2_3.png)
 
 Question: Does the search traffic tend to increase during the winter holiday period (weeks 40 through 52)?
 
@@ -87,21 +87,21 @@ To do so, I completed the following steps:
 
 #### Results table of Stock price csv head and tail.
 
-![Screenshot3_1](../Screenshots/Screenshot3_1.png)
+![Screenshot3_1](./Screenshots/Screenshot3_1.png)
 
 #### MercadoLibre Closing price hvPlot.
-![Screenshot3_2](../Screenshots/Screenshot3_2.png)
+![Screenshot3_2](./Screenshots/Screenshot3_2.png)
 
 #### Concatenated Dataframes results head and tail.
 
-![Screenshot3_3](../Screenshots/Screenshot3_3.png)
+![Screenshot3_3](./Screenshots/Screenshot3_3.png)
 - Market events emerged during the year of 2020 that many companies found difficult. But, after the initial shock to global financial markets, new customers and revenue increased for e-commerce platforms. Slice the data to just the first half of 2020 (2020-01 to 2020-06 in the DataFrame), and then use hvPlot to plot the data. Do both time series indicate a common trend that’s consistent with this narrative?
 
 #### Sliced result of the concatenated dataframe to first half of 2020
-![Screenshot3_4](../Screenshots/Screenshot3_4.png)
+![Screenshot3_4](./Screenshots/Screenshot3_4.png)
 
 #### First half search trends hvPlots
-![Screenshot3_5](../Screenshots/Screenshot3_5.png)
+![Screenshot3_5](./Screenshots/Screenshot3_5.png)
 
 
 
@@ -112,16 +112,16 @@ Answer: Yes, it could be considered inter-related. I note that there may be a re
 - Create a new column in the DataFrame named “Lagged Search Trends” that offsets, or shifts, the search traffic by one hour. Create two additional columns:
 
 #### HvPlot to visualise stock volatility
-![Screenshot3_6](../Screenshots/Screenshot3_6.png)
+![Screenshot3_6](./Screenshots/Screenshot3_6.png)
 - “Stock Volatility”, which holds an exponentially weighted four-hour rolling average of the company’s stock volatility
 
 - “Hourly Stock Return”, which holds the percent change of the company's stock price on an hourly basis
 
 #### Head and Tail outputs of the Hourly Stock Return dataframe
-![Screenshot3_7](../Screenshots/Screenshot3_7.png)
+![Screenshot3_7](./Screenshots/Screenshot3_7.png)
 
 ####Correlation Table of Stock Volatility, Lagged Search Trends and Hourly Stock Return
-![Screenshot3_8](../Screenshots/Screenshot3_8.png)
+![Screenshot3_8](./Screenshots/Screenshot3_8.png)
 
 - Review the time series correlation, and then answer the following question:
 
@@ -137,22 +137,22 @@ I produced a time series model that analyses and forecasts patterns in the hourl
 - After estimating the model, plot the forecast. How's the near-term forecast for the popularity of MercadoLibre?
 
 #### Resetting the index for Prophet syntax
-![Screenshot4_1](../Screenshots/Screenshot4_1.png)
+![Screenshot4_1](./Screenshots/Screenshot4_1.png)
 
 #### A plot of the Prophet forecast for the Mercado trends data
-![Screenshot4_2](../Screenshots/Screenshot4_2.png)
+![Screenshot4_2](./Screenshots/Screenshot4_2.png)
 
 Question: How's the near-term forecast for the popularity of MercadoLibre?
 
 Answer: The forecast trends shows an initial decline to the centre of the forecast period before recovering to levels near the start of the prediction.
 ####Setting the index in the forecast_mercado_trends dataframe to the ds datetime column.
-![Screenshot4_3](../Screenshots/Screenshot4_3.png)
+![Screenshot4_3](./Screenshots/Screenshot4_3.png)
 
 #### A hvPlot visualisation of the yhat, yhat_lower and yhat_upper   
-![Screenshot4_4](../Screenshots/Screenshot4_4.png)
+![Screenshot4_4](./Screenshots/Screenshot4_4.png)
 
 #### Forecast results for the forecast_mercado_trends dataframe
-![Screenshot4_5](../Screenshots/Screenshot4_5.png)
+![Screenshot4_5](./Screenshots/Screenshot4_5.png)
 
 
 - Plotted the individual time series components of the model to answer the questions...
@@ -182,27 +182,27 @@ To do so, I completed the following steps:
 - Produced a sales forecast for the finance group. Give them a number for the expected total sales in the next quarter. Include the best- and worst-case scenarios to help them make better plans.
 
 #### A review of the df_mercado_sales dataframe
-![Screenshot5_1](../Screenshots/Screenshot5_1.png)
+![Screenshot5_1](./Screenshots/Screenshot5_1.png)
 
 
 #### HvPlot of daily sales figures 
-![Screenshot5_2](../Screenshots/Screenshot5_2.png)
+![Screenshot5_2](./Screenshots/Screenshot5_2.png)
 
 #### Plot_componets results to analyse seasonal patterns in revenue
-![Screenshot5_3](../Screenshots/Screenshot5_3.png)
+![Screenshot5_3](./Screenshots/Screenshot5_3.png)
 
 #### Predictions of the Mercado sales
-![Screenshot5_4](../Screenshots/Screenshot5_4.png)
+![Screenshot5_4](./Screenshots/Screenshot5_4.png)
 
 Question: For example, what are the peak revenue days? (Mondays? Fridays? Something else?)
 
 Answer: From the weekly chart it is clear that the peak revenue day is Wednesday.
 
 #### A sample of the results of the forecast quarter Dataframe for the period 1 July 2020 to 30 September 2020
-![Screenshot5_5](../Screenshots/Screenshot5_5.png)
+![Screenshot5_5](./Screenshots/Screenshot5_5.png)
 
 #### A hvPlot of the summed values in the forecast_quarter dataframe
-![Screenshot5_6](../Screenshots/Screenshot5_6.png)
+![Screenshot5_6](./Screenshots/Screenshot5_6.png)
 
 Based on the forecast information generated above, the best and worst case scenarios, to better help the finance team plan.
 
